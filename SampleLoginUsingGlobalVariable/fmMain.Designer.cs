@@ -32,13 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 85);
+            this.label1.Location = new System.Drawing.Point(168, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 25);
             this.label1.TabIndex = 0;
@@ -64,7 +65,7 @@
             // 
             // btnCheck
             // 
-            this.btnCheck.Location = new System.Drawing.Point(173, 129);
+            this.btnCheck.Location = new System.Drawing.Point(173, 94);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(136, 47);
             this.btnCheck.TabIndex = 3;
@@ -72,11 +73,22 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(173, 144);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 47);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Open Form Child";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // fmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 238);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.label2);
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button button1;
     }
 }
 

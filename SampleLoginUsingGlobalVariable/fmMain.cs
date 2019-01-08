@@ -36,5 +36,11 @@ namespace SampleLoginUsingGlobalVariable
         {
             MessageBox.Show(Program.UserName);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fmChild f = new fmChild();
+            f.ShowDialog();
+        }
     }
 }
